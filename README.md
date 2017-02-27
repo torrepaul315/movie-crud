@@ -8,7 +8,7 @@
 1. Deploy your site
 
 ## HOME PAGE
-
+done
 - Your homepage can be whatever you want.  Make sure it has a link to your index page.
 
 ![Home](/mockups/home.png)
@@ -16,19 +16,29 @@
 ## INDEX PAGE
 
 - Your index page should list all your movies.  The titles of the movies should link to that movies show page. There should be a button that links to each movie's edit page and a button to delete each movie.
+as of monday morning - files show up
+delete- need to do! two major steps that I can see
+1- make delete button actually work! on.click works, but on all elements not the one selected, had difficulties integrating this into making the button work
+
+*several people mentioned ajax for the delete request as opposed to jquery? n/s why
+2- need to fire up the delete crud call....this could be done by referencing the movie name referenced in the edit and delete class names?
+3- upon a successful response,
+
+
+
 -needs to
 1- js file- on load with an on doc ready qjuery function, this function needs to talk to app.js which will make a get request to the movie-database
 then, once the request comes back successful, and the info passed back to index.js, there will need to be an append to the table element inserting the info of the data pull(might also need to wipe the table each time? check on that)
 ![Index](/mockups/index.png)
 
 ## NEW PAGE
-
+your new page is done!
 - Your new page should have form fields for "title", "director", "year", "your rating", and "poster url".
 
 ![Index](/mockups/new.png)
 
 ## EDIT PAGE
-
+started working on 
 - Your edit page should display the poster have form fields for "title", "director", "year", "your rating", and "poster url".
 
 ![Index](/mockups/edit.png)

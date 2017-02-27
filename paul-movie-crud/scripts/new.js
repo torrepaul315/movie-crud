@@ -60,6 +60,10 @@ $('.add-movie').on('click', (e)=> {
   // console.log(poster);
   console.log(newMovie);
 
+  $.post('/movies', newMovie, function (response) {
+    console.log(response)
+  })
+
   
 
 

@@ -35,14 +35,15 @@ router.post('/movies', (req, res) => {
 })
 
 //route to use with the edit page! starting with patch, but may want it to be a put.  We'll see!
-router.patch('movies/:title', (req, res) => {
+router.post('movies/:title', (req, res) => {
   const movieName = req.params.title;
+  console.log(movieName)
   db.get('movies')
     .find({title:movieName})
     .assign(req.body)
     .write()
     .then(updatedMovie => {
-      res.send(updatedDog)
+      res.send(updatedMovie)
     })
     .catch(err => {
     console.log(err);
