@@ -4,7 +4,8 @@ const routes = require('./routes.js');
 const bodyParser = require('body-parser');
 
 var PORT = 4000;
-
+app.use(express.static('./paul-movie-crud'));
+app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.use('/', routes);
 
