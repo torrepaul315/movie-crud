@@ -15,16 +15,23 @@ router.get('/movies', (req, res) => {
   res.send(movieReviews);
 });
 //route for show page that displays movie info
-router.get('/movies/:title', (req, res) => {
-  const movieName = req.params.title
-  const movieFile = db.get('movies').find({title:movieName});
-  res.send(movieFile);
+
+//also should switch to id instead of title
+router.get('/movies/:id', (req, res) => {
+  // const movieId = parseInt(req.params.id)
+  // const movieFile = db.get('movies.movieId').find([movieId]);
+
+  const singleMovie = db.get('movies').nth(+req.params.id);
+
+  res.send(singleMovie);
 });
 
 //route that goes with the new page and adds content to the database
 router.post('/movies', (req, res) => {
   db.get('movies')
   .push(req.body)
+  .last()
+  .assign({id: Date.now()})
   .write()
   .then( newMovie => {
     res.status(201).send(newMovie);
@@ -35,11 +42,13 @@ router.post('/movies', (req, res) => {
 })
 
 //route to use with the edit page! starting with patch, but may want it to be a put.  We'll see!
-router.post('movies/:title', (req, res) => {
-  const movieName = req.params.title;
+
+//as per tom! switch to IDs instead of.title
+router.post('movies/:id', (req, res) => {
+  const movieId = parseInt(req.params.title);
   console.log(movieName)
   db.get('movies')
-    .find({title:movieName})
+    .find({'id':movieId})
     .assign(req.body)
     .write()
     .then(updatedMovie => {
@@ -55,13 +64,16 @@ router.post('movies/:title', (req, res) => {
 
 
 // route for the delete button on the index page
-router.delete('/movies/', (req, res) => {
-  const movieName = req.params.title
+router.delete('/movies/:id', (req, res) => {
+  const movieId = parseInt(req.params.id);
   db.get('movies')
-    .remove({title:movieName})
+    .remove({'id':movieId})
     .write()
     .then(deletedMovie => {
       res.status(204).send();
+    })
+    .catch(err => {
+    console.log(err);
     })
 })
 

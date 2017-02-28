@@ -2,6 +2,10 @@ $(document).ready(function() {
   console.log("hello");
   // alert('page has loaded');
 
+
+
+
+
   var editMovie = {};
 
   $('.edit-movie').on('click', (e)=> {
@@ -20,10 +24,54 @@ $(document).ready(function() {
     console.log(editMovie);
 
     var route = '/movies/:' + editMovie.title + ''
-console.log(route);
+    console.log(route);
 
-    $.post(route, editMovie, (response) => {
+    $.post(`${route}`, editMovie, (response) => {
       console.log(response)
     })
   });
 });
+
+
+//all code mostly from Jeff below!
+
+
+// function getUrlParameter(sParam) {
+//   const sPageURL = decodeURIComponent(window.location.search.substring(1));
+//   const sURLVariables = sPageURL.split('&');
+//   var returner;
+//
+//   sURLVariables.forEach((paraName) => {
+//     const sParameterName = paraName.split('=');
+//     if (sParameterName[0] === sParam) {
+//       returner = sParameterName[1] === undefined ? false : sParameterName[1];
+//     }
+//   });
+//   console.log('id:', returner);
+//
+//
+//   $.ajax({
+//       method: 'GET',
+//       url: '/movies/' + returner,
+//     })
+//     .then((data) => {
+//       console.log(data)
+//     })
+//     .catch((err) => {
+//       console.log(err)
+//     })
+//
+//
+// // return returner;
+// }
+//
+// $(document).ready(function() {
+//     //  console.log('linked');
+//
+// getUrlParameter('id');
+// // console.log(returner);
+//   // $.get('/movies')
+//   //  .then(renderMovies);
+//   //
+//   // var movieArray
+// });
