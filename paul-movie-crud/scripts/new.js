@@ -36,7 +36,7 @@ function createMovieList(movie) {
 
 /*? what the heck is going on here! not only does this fire off when the page loads, but then when i click on add movie, it refreshes the page too! wtf?!*/
 $(document).ready(function() {
-  alert('page has loaded');
+  
 
 });
 
@@ -62,9 +62,10 @@ $('.add-movie').on('click', (e)=> {
 
   $.post('/movies', newMovie, function (response) {
     console.log(response)
+    window.location = '/index.html';
   })
 
-  
+
 
 
 });

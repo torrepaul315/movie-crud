@@ -1,5 +1,5 @@
 
-//so now we are getting the objec with the right data! just need to render it on the page! 
+//so now we are getting the objec with the right data! just need to render it on the page!
 function getUrlParameter(sParam) {
   const sPageURL = decodeURIComponent(window.location.search.substring(1));
   const sURLVariables = sPageURL.split('&');
@@ -20,6 +20,7 @@ function getUrlParameter(sParam) {
     })
     .then((data) => {
       console.log(data)
+      renderData(data);
     })
     .catch((err) => {
       console.log(err)
@@ -39,3 +40,12 @@ getUrlParameter('id');
   //
   // var movieArray
 });
+
+function renderData(info) {
+  console.log(info);
+  $('.movie-title-edit').text(info.title);
+  $('.director-edit').text(info.director);
+  $('.year-edit').text(info.year);
+  $('.my-rating-edit').text(info.rating);
+  $('.poster-url-edit').attr("src",info.poster);
+}

@@ -3,33 +3,26 @@
     {
       "title": "Interstellar",
       "director": "Christopher Nolan",
-      "year": 2014,
-      "rating": 2,
-      "url": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjIxNTU4MzY4MF5BMl5BanBnXkFtZTgwMzM4ODI3MjE@._V1_UY1200_CR69,0,630,1200_AL_.jpg"
+      "year": "2014",
+      "rating": "9",
+      "poster": "https://alternativemovieposters.com/wp-content/uploads/2015/12/edgar_interstellar.jpg",
+      "id": 1488234530767
     },
     {
-      "title": "hello",
-      "director": "hello ",
-      "year": "",
-      "rating": "",
-      "poster": "",
-      "id": 1488209904940
+      "title": "Dune",
+      "director": "David Lynch",
+      "year": "1985",
+      "rating": "6",
+      "poster": "http://t0.gstatic.com/images?q=tbn:ANd9GcQwwPKgIxuvos4p0NuR8SEeaCou_hETH-q4KdRmsrxMaAPlhI6I",
+      "id": 1488240908531
     },
     {
-      "title": "a",
-      "director": "a",
-      "year": "a",
-      "rating": "a",
-      "poster": "a",
-      "id": 1488216683505
-    },
-    {
-      "title": "E",
-      "director": "E",
-      "year": "E",
-      "rating": "E",
-      "poster": "E",
-      "id": 1488223743228
+      "title": "Wu: the Story of the Wutang Clan",
+      "director": "Gerald Barclay ",
+      "year": "2007",
+      "rating": "11",
+      "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMzJlYzkwYTEtNWYyYi00N2EzLWFhMTAtNmEyY2MwZGE3MTk4XkEyXkFqcGdeQXVyMTM4NzA3NQ@@._V1_.jpg",
+      "id": 1488241284924
     }
   ]
 }

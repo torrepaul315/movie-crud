@@ -44,9 +44,8 @@ router.post('/movies', (req, res) => {
 //route to use with the edit page! starting with patch, but may want it to be a put.  We'll see!
 
 //as per tom! switch to IDs instead of.title
-router.post('movies/:id', (req, res) => {
-  const movieId = parseInt(req.params.title);
-  console.log(movieName)
+router.put('/movies/:id', (req, res) => {
+  const movieId = parseInt(req.params.id);
   db.get('movies')
     .find({'id':movieId})
     .assign(req.body)
