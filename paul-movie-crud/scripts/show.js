@@ -38,7 +38,7 @@ getUrlParameter('id');
   // $.get('/movies')
   //  .then(renderMovies);
   //
-  // var movieArray
+  // var movieArrayat
 });
 
 function renderData(info) {

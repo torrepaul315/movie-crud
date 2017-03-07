@@ -1,14 +1,6 @@
 {
   "movies": [
     {
-      "title": "Interstellar",
-      "director": "Christopher Nolan",
-      "year": "2014",
-      "rating": "9",
-      "poster": "https://alternativemovieposters.com/wp-content/uploads/2015/12/edgar_interstellar.jpg",
-      "id": 1488234530767
-    },
-    {
       "title": "Dune",
       "director": "David Lynch",
       "year": "1985",
@@ -23,6 +15,14 @@
       "rating": "11",
       "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMzJlYzkwYTEtNWYyYi00N2EzLWFhMTAtNmEyY2MwZGE3MTk4XkEyXkFqcGdeQXVyMTM4NzA3NQ@@._V1_.jpg",
       "id": 1488241284924
+    },
+    {
+      "title": "hello",
+      "director": "how are you ",
+      "year": "2001",
+      "rating": "25",
+      "poster": "somethinglonggggg",
+      "id": 1488895199658
     }
   ]
 }

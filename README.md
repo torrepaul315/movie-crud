@@ -38,7 +38,7 @@ your new page is done!
 ![Index](/mockups/new.png)
 
 ## EDIT PAGE
-started working on 
+started working on
 - Your edit page should display the poster have form fields for "title", "director", "year", "your rating", and "poster url".
 
 ![Index](/mockups/edit.png)
@@ -65,3 +65,32 @@ new.js is does not appear to be linked yet to new html
 
 writing out steps/things to tackle
 1- get js file properly linked to the corresponding html!
+
+{
+  "movies": [
+    {
+      "title": "Interstellar",
+      "director": "Christopher Nolan",
+      "year": "2014",
+      "rating": "9",
+      "poster": "https://alternativemovieposters.com/wp-content/uploads/2015/12/edgar_interstellar.jpg",
+      "id": 1488234530767
+    },
+    {
+      "title": "Dune",
+      "director": "David Lynch",
+      "year": "1985",
+      "rating": "6",
+      "poster": "http://t0.gstatic.com/images?q=tbn:ANd9GcQwwPKgIxuvos4p0NuR8SEeaCou_hETH-q4KdRmsrxMaAPlhI6I",
+      "id": 1488240908531
+    },
+    {
+      "title": "Wu: the Story of the Wutang Clan",
+      "director": "Gerald Barclay ",
+      "year": "2007",
+      "rating": "11",
+      "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMzJlYzkwYTEtNWYyYi00N2EzLWFhMTAtNmEyY2MwZGE3MTk4XkEyXkFqcGdeQXVyMTM4NzA3NQ@@._V1_.jpg",
+      "id": 1488241284924
+    }
+  ]
+}

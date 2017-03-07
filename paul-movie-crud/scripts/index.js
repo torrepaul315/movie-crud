@@ -85,31 +85,31 @@ $(document).ready(function() {
 
   });
 
-  // $(document).on('click', '.edit', function (e) {
-  //   e.preventDefault();
-  //   // console.log('edit button works');
-  //   var movie = $(this).closest(".movie-item");
-  //   console.log(movie);
-  //   var id = movie.attr('id');
-  //   console.log(id);
-  //   $.ajax({
-  //     method: 'GET',
-  //     url: '/movies/' + id
-  //   })
-  //   .then((response) => {
-  //     console.log(response);
-  //     //need to move to the edit page
-  //     location.replace('./edit.html')
-  //     //need to move to
-  //
-  //
-  //
-  //
-  //   })
-  //   .catch((err) => {
-  //     ALERT(err);
-  //   })
-  // })
+  $(document).on('click', '.edit', function (e) {
+    e.preventDefault();
+    // console.log('edit button works');
+    var movie = $(this).closest(".movie-item");
+    console.log(movie);
+    var id = movie.attr('id');
+    console.log(id);
+    $.ajax({
+      method: 'GET',
+      url: '/movies/' + id
+    })
+    .then((response) => {
+      console.log(response);
+      //need to move to the edit page
+      location.replace('./edit.html')
+      //need to move to
+
+
+
+
+    })
+    .catch((err) => {
+      ALERT(err);
+    })
+  })
 
 });
 
